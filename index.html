@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="compiled/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="compiled/index.css" rel="stylesheet">
 
     <title>Project Card</title>
 </head>
 
 <body>
     <section id="projects" class="projects">
-        <h2 class="projects__title">Mes projets</h2>
+        <h1 class="projects__title">Mes projets</h1>
         <section id="cards" class="cards">
 
             <div class="card">
@@ -40,15 +43,15 @@
         <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
             <div class="new-project-form__input-group">
                 <label for="project-title">Titre du projet</label>
-                <input type="text" name="project-title" id="project-title">
+                <input type="text" name="project-title" id="project-title" placeholder="Choisir un titre">
             </div>
             <div class="new-project-form__input-group">
                 <label for="project-img-link">Lien vers une image en ligne</label>
-                <input type="text" name="project-img-link" id="project-img-link">
+                <input type="text" name="project-img-link" id="project-img-link" placeholder="URL de l'image">
             </div>
             <div class="new-project-form__input-group new-project-form__input-group--textarea">
                 <label for="project-text">Description du projet</label>
-                <textarea name="project-text" id="project-text" rows="10"></textarea>
+                <textarea name="project-text" id="project-text" rows="10" placeholder="Description brève du projet"></textarea>
             </div>
             <button type="submit" class="new-project__button">Créer le projet</button>
         </form>

@@ -1,0 +1,45 @@
+body {
+    font-family: 'Neuron', serif;
+    padding-bottom: 3em;
+    background-color: $background_main;
+}
+
+.projects {
+    width: 80%;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border: 2px solid $border;
+    @include shadows;
+    border-radius: 10px;
+    background-color: $background_cards;
+    margin-top: 20px;
+}
+
+.card__img {
+    width: 200px;
+}
+
+.card__text {
+    text-align: center;
+}
+
+.new-project {
+    margin: 100px auto 0px auto;
+    width: 50%;
+    background-color: $background_forms;
+    border-radius: 10px;
+    padding: 20px 50px 50px 50px;
+}

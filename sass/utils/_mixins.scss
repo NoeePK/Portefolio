@@ -1,0 +1,9 @@
+@mixin headings($size){
+    text-align: center;
+    font-weight: lighter;
+    font-size: $size;
+}
+
+@mixin shadows {
+    box-shadow : 3px 5px $shadow;
+}

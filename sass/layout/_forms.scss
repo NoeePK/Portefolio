@@ -1,0 +1,41 @@
+.new-project-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.new-project-form__input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.new-project-form__input-group input {
+    width: 60%;
+    border-radius: 8px;
+    @include shadows;
+    border: none;
+    height: 2em;
+
+
+    &:focus {
+        outline: solid $border;
+    }
+}
+
+.new-project-form__input-group--textarea {
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+        border-radius: 8px;
+        margin-top: 20px;
+        @include shadows;
+        border: none;
+        width: 80%;
+
+        &:focus {
+            outline: solid $border;
+        }
+    }
+}

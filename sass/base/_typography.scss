@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Neuton', serif;
+    src : url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+}
+
+body {
+    font-size: 1.2em;
+    color: $text-color;
+}
+
+h1 {
+    @include headings ($big_title);
+    background-color: $background_forms;
+    border-radius: 8px;
+    
+    
+}
+
+h2 {
+    @include headings ($medium_title);
+}
+
+h3{
+    @include headings ($small_title);
+}
