@@ -10,14 +10,14 @@ body {
 
 h1 {
     @include headings ($big_title);
-    background-color: $background_forms;
-    border-radius: 8px;
-    
+    color: $text-color;
+    @include neon ($background_forms);
     
 }
 
 h2 {
     @include headings ($medium_title);
+    @include neon ($background_main)
 }
 
 h3{

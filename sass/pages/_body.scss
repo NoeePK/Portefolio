@@ -26,10 +26,19 @@ body {
     border-radius: 10px;
     background-color: $background_cards;
     margin-top: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+
+    }
 }
 
 .card__img {
-    width: 200px;
+    width: 70%;
+    height: 50%;
 }
 
 .card__text {

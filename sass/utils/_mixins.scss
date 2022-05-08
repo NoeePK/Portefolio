@@ -7,3 +7,20 @@
 @mixin shadows {
     box-shadow : 3px 5px $shadow;
 }
+
+@mixin neon($color){
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $color, 0 0 30px $color, 
+    0 0 40px $color, 0 0 55px $color, 0 0 75px $color;
+}
+
+
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX($shake-intensity * -1);
+    }
+}
