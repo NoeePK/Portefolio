@@ -13,10 +13,8 @@ h1 {
     @include headings ($big_title);
     color: $white;
     border-radius: 8px;
-    border: 5px solid $background_forms;
-    text-shadow: 4px 4px $border;
-    @include shadows;
-    background-color: $background_forms;
+    text-shadow: 6px 8px $shadow;
+    background-color: $border;
 }
 
 h2 {
