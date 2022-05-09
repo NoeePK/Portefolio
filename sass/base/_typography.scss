@@ -7,26 +7,35 @@
 body {
     font-size: 1.2em;
     color: $text-color;
+    background-color: $background_main;
 }
 
 h1 {
+    @include headings ($header_title);
+    color: $white;
+    border-radius: 8px;
+    text-shadow: 6px 8px $shadow;
+}
+
+h2 {
     @include headings ($big_title);
     color: $white;
     border-radius: 8px;
     text-shadow: 6px 8px $shadow;
-    background-color: $border;
+    background-color: $background_forms;
+   
 }
 
-h2 {
+h3 {
+    @include headings ($small_title);
+    text-shadow: 3px 3px $background_main;
+}
+
+h4{
     @include headings ($medium_title);
     border-radius: 8px;
     color: $white;
     text-shadow: 4px 4px $shadow;
     border: none;
 
-}
-
-h3 {
-    @include headings ($small_title);
-    text-shadow: 3px 3px $background_main;
 }
