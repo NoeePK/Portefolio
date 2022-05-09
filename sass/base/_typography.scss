@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Neuton', serif;
-    src : url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+    font-family: 'Permanent Marker', cursive;
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    ;
 }
 
 body {
@@ -10,16 +11,23 @@ body {
 
 h1 {
     @include headings ($big_title);
-    color: $text-color;
-    @include neon ($background_forms);
-    
+    color: $background_cards;
+    border-radius: 8px;
+    border: none;
+    text-shadow: 4px 4px $text-color;
+    background-image: url(../images/banner_crepis.jpg);
 }
 
 h2 {
     @include headings ($medium_title);
-    @include neon ($background_main)
+    border-radius: 8px;
+    color: $background_cards;
+    text-shadow: 4px 4px $shadow;
+    border: none;
+
 }
 
-h3{
+h3 {
     @include headings ($small_title);
+    text-shadow: 3px 3px $background_main;
 }

@@ -7,31 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="compiled/index.css" rel="stylesheet">
 
     <title>Project Card</title>
 </head>
 
 <body>
+    
     <section id="projects" class="projects">
         <h1 class="projects__title">Mes projets</h1>
         <section id="cards" class="cards">
 
             <div class="card">
-                <h3 class="card__title">Mon premier projet</h3>
+                <h3 class="card__title">Premier projet</h3>
                 <img class="card__img" src="images/programmer1.png"
                     alt="image d'illustration : confusion et tâtonnement">
                 <p class="card__text">Ce projet HTML et CSS est un site présentant mon CV.</p>
             </div>
             <div class="card">
-                <h3 class="card__title">Mon premier projet Javascript</h3>
+                <h3 class="card__title">Premier projet Javascript</h3>
                 <img class="card__img" src="images/programmer.png" alt="image d'illustration : prise en main">
                 <p class="card__text">Ce projet Javascript est un site portefolio de mes projets.</p>
             </div>
 
             <div class="card">
-                <h3 class="card__title">Mon deuxième projet Javascript</h3>
+                <h3 class="card__title">Deuxième projet Javascript</h3>
                 <img class="card__img" src="images/cool.png" alt="image d'illustration : en net progrès ">
                 <p class="card__text">Ce projet Javascript (à remplir).</p>
             </div>
@@ -43,15 +44,18 @@
         <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
             <div class="new-project-form__input-group">
                 <label for="project-title">Titre du projet</label>
-                <input type="text" name="project-title" id="project-title" placeholder="Choisir un titre" minlength="10">
+                <input type="text" name="project-title" id="project-title" placeholder="Choisir un titre"
+                    minlength="10">
             </div>
             <div class="new-project-form__input-group">
                 <label for="project-img-link">Lien vers une image en ligne</label>
-                <input type="text" name="project-img-link" id="project-img-link" placeholder="URL de l'image" minlength="20">
+                <input type="text" name="project-img-link" id="project-img-link" placeholder="URL de l'image"
+                    minlength="20">
             </div>
             <div class="new-project-form__input-group new-project-form__input-group--textarea">
                 <label for="project-text">Description du projet</label>
-                <textarea name="project-text" id="project-text" rows="10" minlength="20" placeholder="Description brève du projet"></textarea>
+                <textarea name="project-text" id="project-text" rows="10" minlength="20"
+                    placeholder="Description brève du projet"></textarea>
             </div>
             <button type="submit" class="new-project__button">Créer le projet</button>
         </form>

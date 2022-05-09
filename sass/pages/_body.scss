@@ -1,5 +1,5 @@
 body {
-    font-family: 'Neuron', serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 3em;
     background-color: $background_main;
 }
@@ -26,6 +26,7 @@ body {
     border-radius: 10px;
     background-color: $background_cards;
     margin-top: 20px;
+    margin-bottom: 3%;
     cursor: pointer;
     transform: scale(1);
     transition: all 350ms ease-in-out;

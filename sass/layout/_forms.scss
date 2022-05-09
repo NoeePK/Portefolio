@@ -23,8 +23,8 @@
 
     &:not(:focus):invalid {
         color: white;
-        border: 2px solid $cd-danger;
-        background: $cd-danger;
+        border: 2px solid $invalid;
+        background: $invalid;
         animation: headshake 100ms cubic-bezier(.4, .1, .6, .9) 2;
     }
 }

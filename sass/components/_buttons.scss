@@ -5,6 +5,8 @@
     border: none;
     @include shadows;
     border-radius: 8px;
+    text-shadow: 3px 3px $text-color;
+    font-family: 'Permanent Marker', cursive;
     font-size: 1.2em;
     color: white;
     min-height: fit-content;
