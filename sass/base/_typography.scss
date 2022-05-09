@@ -11,16 +11,18 @@ body {
 
 h1 {
     @include headings ($big_title);
-    color: $background_cards;
+    color: $white;
     border-radius: 8px;
-    border: none;
-    text-shadow: 4px 4px $text-color;
+    border: 5px solid $background_forms;
+    text-shadow: 4px 4px $border;
+    @include shadows;
+    background-color: $background_forms;
 }
 
 h2 {
     @include headings ($medium_title);
     border-radius: 8px;
-    color: $background_cards;
+    color: $white;
     text-shadow: 4px 4px $shadow;
     border: none;
 

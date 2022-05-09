@@ -21,18 +21,19 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 30%;
-    border: 2px solid $border;
-    @include shadows;
     border-radius: 10px;
     background-color: $background_cards;
-    margin-top: 20px;
-    margin-bottom: 3%;
+    @include shadows;
+    border: 5px solid $background_forms;
+    
     cursor: pointer;
     transform: scale(1);
     transition: all 350ms ease-in-out;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.15);
+        background-color: $background_forms;
+        
 
     }
 }
