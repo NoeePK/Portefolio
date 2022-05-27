@@ -1,7 +1,7 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 3em;
-    background-color: $background_cards;
+    background-color: lighten($color: $background_main, $amount: 40%);
 }
 
 .projects {
